@@ -37,7 +37,7 @@ public class Main {
         socket.on("entrar_chat", objetos -> {
             JSONArray usuarios = (JSONArray) objetos[0];
             // Aqui entra un usuario incluyendote
-            System.out.println(usuarios);
+            System.out.println("Entro: "+usuarios["nombre"]);
         });
         socket.connect();
 
